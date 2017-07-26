@@ -42,18 +42,18 @@ As you can see, it just puts your files _inline_.
 -- myapp.lua
 
 package.preload['main'] = function()
-local m = require "mymodule"
+	local m = require "mymodule"
 
-print "hello from main.lua"
-m.sayhello()
-
+	print "hello from main.lua"
+	m.sayhello()
 end
+
 package.preload['mymodule'] = function()
-return {
-	sayhello= function() print("hello from dep.lua") end
-}
-
+	return {
+		sayhello= function() print("hello from dep.lua") end
+	}
 end
+
 require('main')
 ```
 
