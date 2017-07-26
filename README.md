@@ -4,7 +4,7 @@ A linker for lua code
 lua-link puts your dependencies inside one file, so that you can embed it easily inside your application.
 
 ## How does it work ?
-It just puts the content of your file as funtions inside _package.preload_.
+It just puts the content of your file as functions inside _package.preload_.
 
 Let's say your lua program has two files: _main.lua_ and its dependency _dep.lua_
 
