@@ -44,7 +44,7 @@ end
 local out = io.open(out_name, "w")
 
 for modulename, filename in pairs(module_map) do
-	result, err = loadfile(filename)
+	result, err = loadfile(filename, "t")
 	if result == nil then
 		print(err)
 		os.exit(1)
