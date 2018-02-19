@@ -31,10 +31,12 @@ Just link it :
 
 Now all your dependencies are inside _myapp.lua_
 
-    $ rm main.lua dep.lua
-    $ lua myapp.lua
-    hello from main.lua
-    hello from dep.lua
+```sh
+$ rm main.lua dep.lua
+$ lua myapp.lua
+hello from main.lua
+hello from dep.lua
+```
 
 As you can see, it just puts your files _inline_.
     
