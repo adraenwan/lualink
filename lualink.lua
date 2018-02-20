@@ -24,15 +24,14 @@ while true do
         modname, filename = arg[i]:match("^-m([^=]*)=([^=]*)$")
         if modname ~= nil and filename ~= nil then
             module_map[modname] = filename
-            next
-        end
-
-        respath, filename = arg[i]:match("^-r([^=]*)=([^=]*)$")
-        if respath == nil or filename == nil then
-            show_usage()
-            os.exit(1)
         else
-            resource_map[respath] = filename
+            respath, filename = arg[i]:match("^-r([^=]*)=([^=]*)$")
+            if respath == nil or filename == nil then
+                show_usage()
+                os.exit(1)
+            else
+                resource_map[respath] = filename
+            end
         end
     end
 
