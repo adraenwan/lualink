@@ -2,7 +2,7 @@ package = "lua-link"
 version = "0.0-1"
 source = {
 	url = "git+https://github.com/adraenwan/lua-link",
-	branch = "luarocks"
+	branch = "luarocks",
 	tag = "v0.0",
 }
 

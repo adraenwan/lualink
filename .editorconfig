@@ -7,7 +7,3 @@ end_of_line = LF
 [*.lua]
 indent_style = space
 indent_size = 4
-
-[lua-link]
-indent_style = space
-indent_size = 4
