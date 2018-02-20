@@ -1,7 +1,7 @@
-# lua-link
+# lualink
 A linker for lua code
 
-lua-link puts all your dependencies inside one file, so that you can embed it easily.
+lualink puts all your dependencies inside one file, so that you can embed it easily.
 
 ## How does it work ?
 It just puts the content of your file as functions inside _package.preload_.
