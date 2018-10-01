@@ -1,7 +1,7 @@
 #!/usr/bin/env lua
 
 local function show_usage()
-    print("Usage: lua-link [-o OUTPUT_FILE] main=FILE [-mMODULE=FILE]... [-rRESOURCEPATH=FILE]...")
+    print("Usage: lualink [-o OUTPUT_FILE] main=FILE [-mMODULE=FILE]... [-rRESOURCEPATH=FILE]...")
 end
 
 local out_name = nil
